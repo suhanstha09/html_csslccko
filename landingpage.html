@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('/image/me.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 20px;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        border-radius: 20px; 
+    }
+
+    #navbar ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar li {
+        list-style: none;
+        padding: 16px 24px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    #image {
+        height: 100px; 
+        width: 100px;
+        display: block;
+        margin: 0;
+        float: left;
+    }
+
+    #landing-container {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        padding: 20px;
+        height: calc(100vh - 100px); 
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 10px;
+    }
+
+    #text-content {
+        max-width: 50%;
+        padding: 20px;
+    }
+
+    #text-content h1 {
+        font-size: 3rem;
+        color: #333;
+    }
+
+    #text-content p {
+        font-size: 1.2rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    #image-content {
+        display: block; 
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    #image-content img {
+        max-width: 50%; 
+        height: auto; 
+        border-radius: 10px;
+    }</style>
+</head>
+<body>
+    <div id="navbar">
+        <img id="image" src="/image/me.jpg" alt="me" height="100" width="100" download="me.jpg " style="display: flex;">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+    <div id="landing-container">
+        <div id="text-content">
+            <h1>Welcome to my Website</h1>
+            <p>ma chai web developer horey.</p>
+        </div>
+        <div id="image-content">
+            <img src="/image/me.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+</body>
+</html>
