@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .my-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .starbutton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            color: gold;
+        }
+
+        .starbutton i {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        } 
+        @media screen and (max-width: 768px) {
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .my-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .starbutton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            color: gold;
+        }
+
+        .starbutton i {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <div class="grid-container">
+
+        <div class="my-box" id="card1">
+            <h2>Card 1</h2>
+            <div class="image" style="background-image: url(/image/me.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card2">
+            <h2>Card 2</h2>
+            <div class="image" style="background-image: url(/image/things.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card3">
+            <h2>Card 3</h2>
+            <div class="image" style="background-image: url(/image/heist.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card4">
+            <h2>Card 4</h2>
+            <div class="image" style="background-image: url(/image/me.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+        <div class="my-box" id="card1">
+            <h2>Card 1</h2>
+            <div class="image" style="background-image: url(/image/me.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card2">
+            <h2>Card 2</h2>
+            <div class="image" style="background-image: url(/image/things.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card3">
+            <h2>Card 3</h2>
+            <div class="image" style="background-image: url(/image/heist.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+
+        <div class="my-box" id="card4">
+            <h2>Card 4</h2>
+            <div class="image" style="background-image: url(/image/me.jpg);"></div>
+            <p>Simple example of a card.</p>
+            <div class="starbutton">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+            </div>
+            <button>VIEW DETAILS</button>
+        </div>
+    </div>
+</body>
+</html>
